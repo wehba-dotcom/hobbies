@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Semester3-Course-Asigentment1</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="allinone.css">
+        <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+    </head>
+    <body>
+    <ul class="tabs">
+        <li data-tab-target="#home" class="active tab">Home</li>
+        <li data-tab-target="#person" class="tab">Person</li>
+        <li data-tab-target="#hoppy" class="tab">Hoppy</li>
+        <li data-tab-target="#address" class="tab">Address</li>
+        <li data-tab-target="about" class="tab">About</li>
+    </ul>
+    <div class="tab-content">
+        <div id="home" data-tab-content class="active">
+            <h1>Home</h1>
+            <p>Wellcome to Semester-3... Course-Assigenment-1 </p>
+        </div>
+        <div id="person" data-tab-content>
+        <h1>Person</h1>
+            <table id="persontable" border="2" >
+                <tr>
+                    <th>ID</th>
+                    <th>Email Address</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                </tr>
+                <tbody id="searsh"></tbody>
+            </table>
+                <ul id="list"></ul>
+                <button type="submit" id="hint" >Get All Persones</button><br><br>
+            <form>
+                <label for="email">Email Address:</label>
+                <input type="text" id="email" name="email" value=""><br><br><br>
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" value=""><br><br>
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" value=""><br><br>
+                <button type="submit" id="add" >Add new Person</button><br><br>
+            </form>
+        </div>
+        <div id="hoppy" data-tab-content >
+            <h1>Hoppy</h1>
+            <table id="hoppytable" border="2" >
+                <tr>
+                    <th>ID</th>
+                    <th>Hoppy Name</th>
+                    <th>Description</th>
+
+                </tr>
+                <tbody id="searsh1"></tbody>
+            </table>
+            <ul id="list1"></ul>
+            <button type="submit" id="hint1" >Get All Hobbies</button><br><br>
+            <form>
+                <label for="hoppy1">Hoppy Name :</label>
+                <input type="text" id="hoppy1" name="hoppy" value=""><br><br><br>
+                <label for="des">Description:</label>
+                <input type="text" id="des" name="des" value=""><br><br>
+                <button type="submit" id="add1" >Add new Hoppy</button><br><br>
+            </form>
+        </div>
+        <div id="about" data-tab-content>
+            <h1>About</h1>
+            <p>We going to handle</p>
+        </div>
+            <div id="address" data-tab-content >
+                <h1>Address</h1>
+                <table id="addresstable" border="2" >
+                    <tr>
+                        <th>ID</th>
+                        <th>Street Name</th>
+                        <th>House Number</th>
+                    </tr>
+                    <tbody id="searsh3"></tbody>
+                </table>
+                <ul id="list3"></ul>
+                <button type="submit" id="hint3" >Get All Addresses</button><br><br>
+                <form>
+                    <label for="street">Street Name :</label>
+                    <input type="text" id="street" name="street" value=""><br><br><br>
+                    <label for="hoseNumber">House Number :</label>
+                    <input type="text" id="hoseNumber" name="hoseNumber" value=""><br><br>
+                    <button type="submit" id="add3" >Add new Address</button><br><br>
+                </form>
+            </div>
+            </div>
+    </div>
+        <script type="application/javascript" src="hobbies.js" ></script>
+    </body>
+</html>
